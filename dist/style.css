@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #606C5D;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.controller {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+  background: #662549;
+  border: 0px;
+  padding: 10px;
+  margin-top: 7.5em;
+}
+.controller ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.controller ul li {
+  margin: 5px 0 8px;
+}
+.controller ul button {
+  display: block;
+  width: 100%;
+  background: #400E32;
+  color: #EADBC8;
+  border: 0px;
+  padding: 5px 15px;
+  border-radius: 50%;
+}
+.controller .active {
+  background: #5b4463;
+  color: #EADBC8;
+}
+
+#btn_run_algorithm {
+  display: block;
+  margin-top: 15px;
+  background: #331d2c;
+  color: #EADBC8;
+  padding: 10px 25px;
+  font-size: 1.4rem;
+  border: 0px;
+  border-radius: 0%;
+}
+
+#notification {
+  position: fixed;
+  background: #E19898;
+  border-radius: 25px;
+  text-align: center;
+  color: #EADBC8;
+  padding: 6px 25px 5px;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+}
+
+input[type=range] {
+  width: 100%;
+}
+.navbar{
+  background-color: #331D2C;
+  color: #EFE1D1;
+  justify-content: space-around;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  top:0%;
+  padding:1.4rem 0rem;
+}
+.navbar>a{
+  color: #EFE1D1;
+  margin:0rem;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar>a:hover{
+ color:  #A76F6F;
+}

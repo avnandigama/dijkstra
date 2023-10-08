@@ -1,0 +1,68 @@
+body
+{
+    background-color: #3F2305;
+}
+.invis>p{
+    color: #35A29F; 
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 10s steps(60, end); 
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+h1
+{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 4.5em;
+    width: 100%;    
+    color: #A4907C;
+    margin-top: 1.5em;
+}
+.navbar{
+    background-color: #331D2C;
+    color: #EFE1D1;
+    justify-content: space-around;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top:0%;
+    padding:1.4rem 0rem;
+}
+.navbar>a{
+    color: #EFE1D1;
+    margin:0rem;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar>a:hover{
+   color:  #A76F6F;
+}
+.algo
+{
+    width: 100%;
+    background-color: #83764F;
+}
+code
+{
+    font-family: 'Onest', sans-serif;
+    font-weight: bold;
+    color: #482121;
+    background-color: #83764F;
+    padding: 2px;
+    font-size: 105%;
+    width: 100%;
+}
+.timec>p
+{
+    font-family: 'Onest', sans-serif;
+    color: #9E7676;
+    font-size: 1.1em;
+}

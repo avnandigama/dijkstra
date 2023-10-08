@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dijkstra</title>
+        <meta name="description" content="Get the shortest path!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="../index.html">About Dijkstra</a>
+            <a href="index2.html">Dijkstra Algorithm</a>
+            <a href="../dist/index1.html">Dijkstra Executor</a>
+        </nav>
+        <center>
+            <h1>ALGORITHM</h1>
+        </center>
+        <div class="invis">
+            <p>Here you can see the Dijkstra's Algorithm </p>
+        </div>
+        <div class="algo">
+            <pre>
+                <code >
+Algorithm ShortestPaths(u, cost, dist, n)
+{
+    // Initialize dist[j], 1 ≤ j ≤ n, to the length of the shortest path from vertex v to vertex j in a digraph G with n vertices;
+    // dist[v] is set to zero; G is represented by its cost adjacency matrix cost[l:n, 1:n];
+    for i := 1 to n do
+    { 
+        // Initialize S;
+        S[i] := false;
+        dist[i] := cost[v, i];
+    }
+    S[v] := true;
+    dist[v] := 0.0; // Put v in S;
+    for num := 2 to n - 1 do
+    { 
+        // Determine n-1 paths from v;
+        // Choose u from among those vertices not in S such that dist[u] is minimum;
+        S[u] := true; // Put u in S;
+        for (each w adjacent to u with S[w] = false) do
+        { 
+            // Update distances;
+            if (dist[w] > dist[u] + cost[u, w])
+            {
+                dist[w] := dist[u] + cost[u, w];
+            }
+        }
+    }
+}
+                </code>
+            </pre>
+        </div>
+        <div class="timec"> 
+            <p>When utilising a min-heap to find the next vertex with the least distance, Dijkstra's method has a time complexity of O((V + E) log V). However, when linear search is used to find the next unvisited node, it can be O(n^2).</p>
+        </div>
+    </body>
+</html>
