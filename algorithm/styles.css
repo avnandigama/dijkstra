@@ -1,6 +1,8 @@
 body
 {
     background-color: #3F2305;
+    margin:0;
+    padding:0;
 }
 .invis>p{
     color: #35A29F; 
@@ -65,4 +67,46 @@ code
     font-family: 'Onest', sans-serif;
     color: #9E7676;
     font-size: 1.1em;
+}
+@media (max-width: 1440px) {
+    h1 {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: #331D2C;
+        position: relative;
+      }
+      
+      
+      .navbar a {
+        color: #EFE1D1;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .navbar a:hover {
+        background-color: #331D2C;
+        color: #EFE1D1;
+      }
+      .algo
+{
+    width: 300%;
+    background-color: #83764F;
+}
+code
+{
+    font-family: 'Onest', sans-serif;
+    font-weight: bold;
+    color: #482121;
+    background-color: #83764F;
+    padding: 2px;
+    font-size: 105%;
+    width: 100%;
+    word-wrap: break-word;
+}
+      
 }
