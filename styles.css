@@ -35,3 +35,38 @@ h1
     color: #F4F2DE;
     margin-top: 1.0em;
 }
+video
+{
+    width: 70%;
+    height: auto;
+    display: flex;
+    position:relative;
+    margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+    h1 {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: #331D2C;
+        position: relative;
+      }
+      
+      
+      .navbar a {
+        color: #EFE1D1;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .navbar a:hover {
+        background-color: #331D2C;
+        color: #EFE1D1;
+      }
+      
+}
